@@ -26,7 +26,7 @@ function Contact (){
       };
     
       return (
-        <section className="mt-40 mb-40 md:ml-0 w-96 " id="contact-section" >
+        <section className="mt-40 mb-40 md:ml-0 w-96 pt-32 " id="contact-section" >
   <div className="pb-16">
     <h1 className="pb-5 pl-5 text-indigo-600 font-bold text-xl">Contact me</h1>
     <p className="pl-5 text-gray-800 md:w-96">

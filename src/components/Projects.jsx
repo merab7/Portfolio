@@ -1,67 +1,48 @@
 import { Link } from 'react-router-dom';
-import { projectsData } from './projectData';
+
+import projectsData from './data';
 
 function Projects() {
-
-  
-
-
   const projects = projectsData.map((project) => {
     return (
-      <div key={project.id} className="flex flex-col items-center justify-center mt-10 lg:flex-row  lg:gap-32 md:flex-row md:gap-16 lg:justify-center lg:max-w-fit pb-7">
-        <div className="carousel w-80 md:w-96">
-          <div id={`slide1-${project.id}`} className="carousel-item relative w-full">
-            <img src={project.photos.picone} className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href={`#slide4-${project.id}`} className="btn btn-circle">❮</a>
-              <a href={`#slide2-${project.id}`} className="btn btn-circle">❯</a>
-            </div>
+      <div key={project.id} className="flex flex-col w-full items-center justify-center  mt-10 lg:flex-row lg:gap-16 md:flex-row md:gap-16 lg:justify-center pb-7">
+        <div className="grid grid-cols-2 gap-5 w-full cursor-pointer p-16 lg:w-1/3 md:w-full">
+          <div className="col-span-2 lg:col-span-2">
+            <img src={project.photos.picone} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
           </div>
-          <div id={`slide2-${project.id}`} className="carousel-item relative w-full">
-            <img src={project.photos.pictwo} className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href={`#slide1-${project.id}`} className="btn btn-circle">❮</a>
-              <a href={`#slide3-${project.id}`} className="btn btn-circle">❯</a>
-            </div>
+          <div className="col-span-1">
+            <img src={project.photos.pictwo} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
           </div>
-          <div id={`slide3-${project.id}`} className="carousel-item relative w-full">
-            <img src={project.photos.picthree} className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href={`#slide2-${project.id}`} className="btn btn-circle">❮</a>
-              <a href={`#slide4-${project.id}`} className="btn btn-circle">❯</a>
-            </div>
+          <div className="col-span-1">
+            <img src={project.photos.picthree} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
           </div>
         </div>
-        <div className="mt-5">
-          <p className="text-gray-700 text-center w-96">{project.info}</p>
+        <div className="mt-5 rounded-lg p-6">
+          <p className="text-gray-700 text-center w-96 text-xl">{project.info}</p>
           <div className="flex flex-row gap-5 justify-center pt-5">
             <Link to={project.live} target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-link cursor-pointer text-xl text-indigo-600">Live</button>
+              <button className="btn btn-outline btn-primary cursor-pointer">Live</button>
             </Link>
             <Link to={project.code} target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-link cursor-pointer text-black font-bold text-xl">Code</button>
+              <button className="btn btn-outline cursor-pointer">Code</button>
             </Link>
           </div>
         </div>
       </div>
     );
   });
-  
+
   return (
-    <section className="flex flex-col  items-center justify-center mt-96 pb-96" id="project-section">
-      <h1 className="text-blue-500 font-bold text-2xl">Portfolio</h1>
-      <h1 className="font-sans text-center mb-40">
-        <span role="img" aria-label="robot-emoji" className="text-xl">🦾</span> Web developer portfolio showcasing creative and intuitive websites <span role="img" aria-label="robot-emoji" className="text-xl">🦾</span>
+    <section className="flex flex-col items-center justify-center mt-96 pb-96" id="project-section">
+      <h1 className="text-blue-500 font-bold text-5xl pb-9 pt-32">Portfolio</h1>
+      <h1 className="font-mono  text-xl text-center mb-40">
+        <span role="img" aria-label="robot-emoji" className="text-5xl  ">🦾</span> Web developer portfolio showcasing creative and intuitive websites <span role="img" aria-label="robot-emoji" className="text-5xl">🦾</span>
       </h1>
-      <div>
+      <div className="flex flex-col items-center">
         {projects}
       </div>
     </section>
   );
-  
-  }
-  
-  export default Projects;
+}
 
-
- 
+export default Projects;

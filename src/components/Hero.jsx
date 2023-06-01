@@ -9,7 +9,7 @@ function Hero() {
       <div className="flex flex-col lg:mr-16 ">
         <div className="w-min flex pl-5">
           <h1 className="text-4xl font-bold md:text-5xl lg:text-7xl">Front-end Webdeveloper </h1>
-          <div className="-ml-20 md:-ml-28 lg:-ml-40 w-min text-4xl md:text-6xl lg:text-7xl animate-pulse">🌐</div>
+          <div className="-ml-16 md:-ml-28 lg:-ml-40 w-min text-4xl md:text-6xl lg:text-7xl animate-pulse">🌐</div>
         </div>
         <div className="w-72 md:w-80 lg:w-86 mt-9 pl-5">
           <p>

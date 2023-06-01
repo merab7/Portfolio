@@ -14,7 +14,7 @@ function Aboutme (){
           </div>
 
           <div className="flex flex-col mt-36 -ml-40 w-96 absolute md:mt-0 md:ml-20 lg:ml-0 pb-32 " >
-            <h1 className="text-blue-500 font-bold text-xl ">About me</h1>
+            <h1 className="text-blue-500 font-bold text-4xl pb-4 ">About me</h1>
             <h1 className="font-bold text-xl">Passionate and dedicated Front-End and Web Developer based in Tbilisi, Georgia 📍.</h1>
             <p className=" md:w-96 pt-5 ">I am that rare case, or maybe not, where I got into tech from a completely different field. 
                 After studying at Tbilisi State University for six years, I realized that medicine was not my passion.
