@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
-import {projectsData} from "./projectData";
+import { projectsData } from './projectData';
 
 function Projects() {
+
+  
+
+
   const projects = projectsData.map((project) => {
     return (
       <div key={project.id} className="flex flex-col items-center justify-center mt-10 lg:flex-row  lg:gap-32 md:flex-row md:gap-16 lg:justify-center lg:max-w-fit pb-7">
