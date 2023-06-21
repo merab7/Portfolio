@@ -11,9 +11,26 @@ import colorthree from "./apppic/colorthree.png"
 import watchone from "./apppic/watchone.png"
 import watchtwo from "./apppic/watchtwo.png"
 import watchthree from "./apppic/watchthree.png"
-
+import crypone from "./apppic/crypone.png"
+import cryptwo from "./apppic/cryptwo.png"
+import crypfo from "./apppic/crypfo.png"
 
 const projectsData = [
+  {
+    name: "Cryptico",
+    info: "cryptico is a site where users can get information about different cryptocurrencies get the latest news about each of them and see charts depending on the period they select and many others. The site is fully responsive. Used technologies are: React, Redux Toolkit tailwind CSS.",
+    photos: {
+      picone: crypone,
+      pictwo: crypfo,
+      picthree: cryptwo,
+    },
+    live: "https://gilded-phoenix-51fe49.netlify.app/",
+    code: "https://github.com/merab7/cryptico2.0.git",
+    id: "0"
+  },
+  
+
+
     {
       name: "Quizzify",
       info: "Quizzify is a React quiz app that fetches data from an API. Users can choose from 23 categories and select the difficulty level for their quiz. After answering the questions, the app displays feedback on correct and incorrect answers. It's an engaging and educational experience that combines React and API integration.",
@@ -24,7 +41,7 @@ const projectsData = [
       },
       live: "https://animated-beijinho-e7b14d.netlify.app/",
       code: "https://github.com/merab7/quizzify.git",
-      id: "0"
+      id: "1"
     },
     {
       name: "Meme-Maker",
@@ -36,7 +53,7 @@ const projectsData = [
       },
       live: "https://vermillion-semolina-8f5dab.netlify.app/",
       code: "https://github.com/merab7/memegenerato3.0.git",
-      id: "1"
+      id: "2"
     },
     {
       name: "Color-scheme",
@@ -48,7 +65,7 @@ const projectsData = [
       },
       live: "https://bejewelled-trifle-6ff49a.netlify.app/",
       code: "https://github.com/merab7/ColorScheme.git",
-      id: "2"
+      id: "3"
     },
     {
       name: "Watchlist",
@@ -60,7 +77,7 @@ const projectsData = [
       },
       live: "https://soft-clafoutis-15011d.netlify.app/watchlistpage",
       code: "https://github.com/merab7/watchlist.git",
-      id: "3"
+      id: "4"
     }
   ];
 
