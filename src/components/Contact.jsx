@@ -12,7 +12,7 @@ function Contact (){
             'service_f7qn9p9',
             'template_4obpmcd',
             refForm.current,
-            'vkEiJne3CilhjHir1'
+            'IU52YKmxIlGAyl-2S'
            )
            .then(
             () => {
@@ -79,7 +79,7 @@ function Contact (){
           <input
             type="submit"
             value="Send"
-            className="ml-2 mt-1 pt-2 pl-4 pr-4 pb-2 bg-indigo-600 text-white font-bold hover:bg-indigo-700 border-solid border border-indigo-600"
+            className=" cursor-pointer ml-2 mt-1 pt-2 pl-4 pr-4 pb-2 bg-indigo-600 text-white font-bold hover:bg-indigo-700 border-solid border border-indigo-600"
           />
         </li>
       </ul>
