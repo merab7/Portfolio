@@ -2,6 +2,20 @@
 import { Link } from 'react-router-dom';
 import projectsData from './data';
 
+const Modal = ({ imageSrc, isOpen, onClose }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75" onClick={onClose}>
+      <div className="relative">
+        <button className="absolute top-2 right-2 text-white text-2xl focus:outline-none" onClick={onClose}>&times;</button>
+        <img src={imageSrc} alt="Enlarged" className="max-w-screen-lg max-h-screen-lg" />
+      </div>
+    </div>
+  );
+};
+
+
 function Projects() {
   const projects = projectsData.map((project) => (
     <div key={project.id} className="flex flex-col items-center justify-center mt-10 lg:flex-row lg:gap-16 md:flex-row md:gap-16 pb-7 w-full">
