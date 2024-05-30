@@ -101,17 +101,20 @@ function Projects() {
           />
         </div>
       </div>
-      <div className="mt-5 p-6 lg:w-1/2 text-center lg:text-left">
-        <p className="text-gray-700 text-xl">{project.info}</p>
-        <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start pt-5">
-          <Link to={project.live} target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-outline btn-primary cursor-pointer">Live</button>
-          </Link>
-          <Link to={project.code} target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-outline cursor-pointer">Code</button>
-          </Link>
-        </div>
-      </div>
+<div className="mt-5 p-6 lg:w-1/2 text-center lg:text-left">
+  <div>
+    <h2 className="text-2xl font-bold mb-3">Project Overview</h2>
+    <p className="text-gray-700">{project.info}</p>
+  </div>
+  <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start pt-5">
+    <Link to={project.live} target="_blank" rel="noopener noreferrer">
+      <button className="btn btn-outline btn-primary cursor-pointer">Live Demo</button>
+    </Link>
+    <Link to={project.code} target="_blank" rel="noopener noreferrer">
+      <button className="btn btn-outline cursor-pointer">View Code</button>
+    </Link>
+  </div>
+</div>
     </div>
   ));
 
