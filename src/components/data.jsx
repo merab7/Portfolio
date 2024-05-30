@@ -1,14 +1,12 @@
-
-import ecom1 from "./apppic/ecom1.png"
-import ecom2 from "./apppic/ecom2.png"
-import ecom3 from "./apppic/ecom3.png"
-import ecom4 from "./apppic/ecom4.png"
-import ecom5 from "./apppic/ecom5.png"
-import ecom6 from "./apppic/ecom6.png"
-import ecom7 from "./apppic/ecom7.png"
-import ecom8 from "./apppic/ecom8.png"
-import ecom9 from "./apppic/ecom9.png"
-
+import ecom1 from "./apppic/ecom1.png";
+import ecom2 from "./apppic/ecom2.png";
+import ecom3 from "./apppic/ecom3.png";
+import ecom4 from "./apppic/ecom4.png";
+import ecom5 from "./apppic/ecom5.png";
+import ecom6 from "./apppic/ecom6.png";
+import ecom7 from "./apppic/ecom7.png";
+import ecom8 from "./apppic/ecom8.png";
+import ecom9 from "./apppic/ecom9.png";
 
 const projectsData = [
   {
@@ -27,7 +25,8 @@ const projectsData = [
     },
     live: "https://gilded-phoenix-51fe49.netlify.app/",
     code: "https://github.com/merab7/cryptico2.0.git",
-    id: "0"
-  }
+    id: "0",
+  },
+];
 
-  export default projectsData
+export default projectsData;
