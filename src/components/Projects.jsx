@@ -8,13 +8,31 @@ function Projects() {
       <div key={project.id} className="flex flex-col w-full items-center justify-center  mt-10 lg:flex-row lg:gap-16 md:flex-row md:gap-16 lg:justify-center pb-7">
         <div className="grid grid-cols-2 gap-5 w-full cursor-pointer p-16 lg:w-1/3 md:w-full">
           <div className="col-span-2 lg:col-span-2">
-            <img src={project.photos.picone} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
+            <img src={project.photos.pictone} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
           </div>
           <div className="col-span-1">
-            <img src={project.photos.pictwo} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
+            <img src={project.photos.picttwo} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
           </div>
           <div className="col-span-1">
-            <img src={project.photos.picthree} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
+            <img src={project.photos.pictthree} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
+          </div>
+          <div className="col-span-1">
+            <img src={project.photos.pictfour} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
+          </div>
+          <div className="col-span-1">
+            <img src={project.photos.pictfive} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
+          </div>
+          <div className="col-span-1">
+            <img src={project.photos.pictsix} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
+          </div>
+          <div className="col-span-1">
+            <img src={project.photos.pictseven} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
+          </div>
+          <div className="col-span-1">
+            <img src={project.photos.picteight} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
+          </div>
+          <div className="col-span-1">
+            <img src={project.photos.pictnine} className="w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 transform-gpu" />
           </div>
         </div>
         <div className="mt-5 rounded-lg p-6">
