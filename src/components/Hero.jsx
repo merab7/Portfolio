@@ -8,13 +8,13 @@ function Hero() {
     <section className="mt-60 flex flex-row justify-center items-center   "  id="home-section" >
       <div className="flex flex-col lg:mr-16 ">
         <div className="w-min flex pl-5">
-          <h1 className="text-4xl font-bold md:text-5xl lg:text-7xl">Front-end Webdeveloper </h1>
+          <h1 className="text-4xl font-bold md:text-5xl lg:text-7xl">Python Developer</h1>
           <div className="-ml-16 md:-ml-28 lg:-ml-40 w-min text-4xl md:text-6xl lg:text-7xl animate-pulse">🌐</div>
         </div>
         <div className="w-72 md:w-80 lg:w-86 mt-9 pl-5">
           <p>
-            I'm a front-end and web developer <span className="font-bold">Merab Todua</span> based in <span className="font-bold">Tbilisi, Georgia</span> 📍.
-            I love coding and creating stunning web solutions that leave a lasting impression.
+            I'm a Python developer <span className="font-bold">Merab Todua</span> based in <span className="font-bold">Tbilisi, Georgia</span> 📍.
+            I love coding.
           </p>
           <div className="flex gap-4 transition-all">
             <Link to="https://www.linkedin.com/in/merab-todua-682965254/" target="_blank" rel="noopener noreferrer" >
