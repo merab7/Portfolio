@@ -6,7 +6,7 @@ const Modal = ({ imageSrc, isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75">
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75" onClick={onClose}>
       <div className="relative">
         <button className="absolute top-2 right-2 text-white text-2xl" onClick={onClose}>&times;</button>
         <img src={imageSrc} alt="Enlarged" className="max-w-screen-lg max-h-screen-lg" />
@@ -20,8 +20,13 @@ function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = (imageSrc) => {
-    setSelectedImage(imageSrc);
-    setIsModalOpen(true);
+    if (selectedImage === imageSrc && isModalOpen) {
+      setIsModalOpen(false);
+      setSelectedImage(null);
+    } else {
+      setSelectedImage(imageSrc);
+      setIsModalOpen(true);
+    }
   };
 
   const closeModal = () => {
