@@ -38,7 +38,7 @@ Developed a fully functional e-commerce site using Django, specializing in footb
 **Achievements:**
 - Built a secure, user-friendly e-commerce platform from scratch.
 - Developed an intuitive admin interface for efficient product management.
-- Implemented a complete order processing system with real-time email notifications.`,,
+- Implemented a complete order processing system with real-time email notifications.`,
     photos: {
       pictone: ecom1,
       picttwo: ecom2,
