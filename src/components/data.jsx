@@ -63,17 +63,7 @@ const projectsData = [
         </div>
       </div>
     </div>`,
-    photos: {
-      pictone: ecom1,
-      picttwo: ecom2,
-      pictthree: ecom3,
-      pictfour: ecom4,
-      pictfive: ecom5,
-      pictsix: ecom6,
-      pictseven: ecom7,
-      picteight: ecom8,
-      pictnine: ecom9,
-    },
+    photos: [ ecom1, ecom2, ecom3, ecom4, ecom5, ecom6, ecom7, ecom8, ecom9],
     live: "https://gilded-phoenix-51fe49.netlify.app/",
     code: "https://github.com/merab7/cryptico2.0.git",
     id: "0",
