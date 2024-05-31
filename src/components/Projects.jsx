@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import projectsData from './data';
+
 const Modal = ({ imageSrc, isOpen, onClose }) => {
   if (!isOpen) return null;
   return (
@@ -12,9 +13,11 @@ const Modal = ({ imageSrc, isOpen, onClose }) => {
     </div>
   );
 };
+
 function Projects() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const openModal = (imageSrc) => {
     if (selectedImage === imageSrc && isModalOpen) {
       setIsModalOpen(false);
@@ -24,28 +27,31 @@ function Projects() {
       setIsModalOpen(true);
     }
   };
+
   const closeModal = () => {
     setSelectedImage(null);
     setIsModalOpen(false);
   };
 
   const projects = projectsData.map((project) => (
-    <div key={project.id} className="flex flex-col items-center justify-center mt-10 lg:flex-row lg:gap-16 md:flex-row md:gap-16 pb-7 w-full">
-      <div className="grid grid-cols-2 gap-5 w-full p-4 sm:p-8 md:p-16 lg:w-1/2">
+    <div key={project.id} className="flex flex-col md:flex-row md:space-x-8 items-center justify-center mt-10 w-full max-w-screen-lg mx-auto">
+      <div className="w-full md:w-1/2">
+        <div className="grid grid-cols-2 gap-4 p-4 sm:p-6">
           {project.photos.map((photo, index) => (
-                <div key={index} className="col-span-1">
-                  <img
-                    src={photo}
-                    className="w-full h-auto shadow-xl rounded-xl cursor-pointer hover:scale-105 transition-all duration-300"
-                    onClick={() => openModal(photo)}
-                    alt={`Project ${index + 1}`}
-                  />
-                </div>
-              ))}
+            <div key={index}>
+              <img
+                src={photo}
+                className="w-full h-auto shadow-xl rounded-xl cursor-pointer hover:scale-105 transition-all duration-300"
+                onClick={() => openModal(photo)}
+                alt={`Project ${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="mt-5 p-6 lg:w-1/2 text-center lg:text-left">
+      <div className="w-full md:w-1/2 p-4 md:p-0">
         <div dangerouslySetInnerHTML={{ __html: project.info }} />
-        <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start pt-5">
+        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start mt-5">
           <Link to={project.live} target="_blank" rel="noopener noreferrer">
             <button className="btn btn-outline btn-primary cursor-pointer">Live Demo</button>
           </Link>
@@ -58,10 +64,10 @@ function Projects() {
   ));
 
   return (
-    <section className="flex flex-col items-center justify-center mt-32 lg:mt-96 pb-32 lg:pb-96" id="project-section">
-      <h1 className="text-blue-500 font-bold text-4xl lg:text-5xl pb-9 pt-16 lg:pt-32">Portfolio</h1>
-      <h1 className="font-mono text-xl lg:text-2xl text-center mb-20 lg:mb-40">
-        <span role="img" aria-label="robot-emoji" className="text-4xl lg:text-5xl">🦾</span> Web developer portfolio showcasing creative and intuitive websites <span role="img" aria-label="robot-emoji" className="text-4xl lg:text-5xl">🦾</span>
+    <section className="flex flex-col items-center justify-center mt-16 pb-16" id="project-section">
+      <h1 className="text-blue-500 font-bold text-3xl lg:text-4xl pb-8 pt-16 lg:pt-24">Portfolio</h1>
+      <h1 className="font-mono text-lg lg:text-xl text-center mb-12 lg:mb-20">
+        <span role="img" aria-label="robot-emoji" className="text-2xl lg:text-3xl">🦾</span> Web developer portfolio showcasing creative and intuitive websites <span role="img" aria-label="robot-emoji" className="text-2xl lg:text-3xl">🦾</span>
       </h1>
       <div className="flex flex-col items-center w-full px-4">
         {projects}
@@ -70,4 +76,5 @@ function Projects() {
     </section>
   );
 }
+
 export default Projects;
