@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import projectsData from './data';
-
 const Modal = ({ imageSrc, isOpen, onClose }) => {
   if (!isOpen) return null;
   return (
@@ -11,7 +10,24 @@ const Modal = ({ imageSrc, isOpen, onClose }) => {
         <img src={imageSrc} alt="Enlarged" className="max-w-screen-lg max-h-screen-lg" />
       </div>
     </div>
-
+  );
+};
+function Projects() {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = (imageSrc) => {
+    if (selectedImage === imageSrc && isModalOpen) {
+      setIsModalOpen(false);
+      setSelectedImage(null);
+    } else {
+      setSelectedImage(imageSrc);
+      setIsModalOpen(true);
+    }
+  };
+  const closeModal = () => {
+    setSelectedImage(null);
+    setIsModalOpen(false);
+  };
 
   const projects = projectsData.map((project) => (
     <div key={project.id} className="flex flex-col items-center justify-center mt-10 lg:flex-row lg:gap-16 md:flex-row md:gap-16 pb-7 w-full">
