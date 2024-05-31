@@ -36,12 +36,12 @@ function Projects() {
   const projects = projectsData.map((project) => (
     <div key={project.id} className="flex flex-col md:flex-row md:space-x-8 items-center justify-center mt-10 w-full max-w-screen-lg mx-auto">
       <div className="w-full md:w-1/2">
-        <div className="grid grid-cols-2 gap-4 p-4 sm:p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 sm:p-6">
           {project.photos.map((photo, index) => (
             <div key={index}>
               <img
                 src={photo}
-                className="w-full h-auto shadow-xl rounded-xl cursor-pointer hover:scale-105 transition-all duration-300"
+                className="w-full h-auto sm:h-full object-cover shadow-xl rounded-xl cursor-pointer hover:scale-105 transition-all duration-300"
                 onClick={() => openModal(photo)}
                 alt={`Project ${index + 1}`}
               />
