@@ -13,8 +13,8 @@ function App() {
     <main className='flex flex-col justify-center items-center bg-withe w-full '  id="main-section" >
     <Header/>
     <Hero/>
-    <Aboutme/>
      <Projects/>
+     <Aboutme/>
      <Contact/>
      <Footer/>
     </main>
