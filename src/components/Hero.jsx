@@ -17,10 +17,10 @@ function Hero() {
             
           </p>
           <div className="flex justify-center lg:justify-start gap-4 mt-5">
-            <Link to="www.linkedin.com/in/merab-todua-a64116311" target="_blank" rel="noopener noreferrer">
+            <Link to="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="text-2xl md:text-3xl lg:text-4xl cursor-pointer hover-effect" />
             </Link>
-            <Link to="https://github.com/topics/sun?l=css" target="_blank" rel="noopener noreferrer">
+            <Link to="https://github.com/merab7" target="_blank" rel="noopener noreferrer">
               <FaGithubSquare className="text-2xl md:text-3xl lg:text-4xl cursor-pointer hover-effect" />
             </Link>
           </div>
