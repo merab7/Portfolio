@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPython, FaDatabase, FaServer, FaHtml5, FaCss3Alt, FaBootstrap, FaJs } from 'react-icons/fa';
+import { FaPython, FaDatabase, FaServer, FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaGitAlt, FaGithub } from 'react-icons/fa';
 import { SiDjango, SiMysql, SiFastapi, SiTailwindcss } from 'react-icons/si';
 
 const TechSkills = () => {
@@ -30,6 +30,24 @@ const TechSkills = () => {
         <span className="text-green-600 text-sm mt-2">FastAPI</span>
       </div>
       <div className="flex flex-col items-center hover-effect transition-all cursor-pointer">
+        <div className="bg-yellow-500 rounded-full p-2">
+          <FaJs className="text-white text-3xl" />
+        </div>
+        <span className="text-yellow-500 text-sm mt-2">JavaScript</span>
+      </div>
+      <div className="flex flex-col items-center hover-effect transition-all cursor-pointer">
+        <div className="bg-orange-600 rounded-full p-2">
+          <FaGitAlt className="text-white text-3xl" />
+        </div>
+        <span className="text-orange-600 text-sm mt-2">Git</span>
+      </div>
+      <div className="flex flex-col items-center hover-effect transition-all cursor-pointer">
+        <div className="bg-black rounded-full p-2">
+          <FaGithub className="text-white text-3xl" />
+        </div>
+        <span className="text-black text-sm mt-2">GitHub</span>
+      </div>
+      <div className="flex flex-col items-center hover-effect transition-all cursor-pointer">
         <div className="bg-red-500 rounded-full p-2">
           <FaHtml5 className="text-white text-3xl" />
         </div>
@@ -53,12 +71,7 @@ const TechSkills = () => {
         </div>
         <span className="text-purple-600 text-sm mt-2">Bootstrap</span>
       </div>
-      <div className="flex flex-col items-center hover-effect transition-all cursor-pointer">
-        <div className="bg-yellow-500 rounded-full p-2">
-          <FaJs className="text-white text-3xl" />
-        </div>
-        <span className="text-yellow-500 text-sm mt-2">JavaScript</span>
-      </div>
+      
     </div>
   );
 };
