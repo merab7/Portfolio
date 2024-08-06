@@ -19,7 +19,7 @@ import film9 from "./appic/film9.png";
 
 const projectsData = [
   {
-    name: "JerseyEcom",
+    name: "jerseys.ge",
     info: `<div className="p-6 bg-white rounded-lg shadow-md">
     <strong className="text-5xl font-bold mb-6">Project Overview</strong>
     <div className="text-gray-800">
@@ -74,12 +74,12 @@ const projectsData = [
   </div>
   `,
     photos: [ ecom1, ecom2, ecom3, ecom4, ecom5, ecom6, ecom7, ecom8, ecom9],
-    live: "https://mtecom.up.railway.app/",
+    live: "https://kharikhatrans-production.up.railway.app/",
     code: "https://github.com/merab7/ecomrailway.git",
     id: "0",
   },
   {
-    name: "JerseyEcom",
+    name: "Myfilms",
     info: `<div className="p-6 bg-white rounded-lg shadow-md">
     <strong className="text-5xl font-bold mb-6">Project Overview</strong>
     <div className="text-gray-800">
