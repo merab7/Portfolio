@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaPython, FaDatabase, FaServer, FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaGitAlt, FaGithub } from 'react-icons/fa';
-import { SiDjango, SiMysql, SiFastapi, SiTailwindcss } from 'react-icons/si';
+import { FaPython, FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaGitAlt, FaGithub } from 'react-icons/fa';
+import { SiDjango, SiMysql, SiPandas, SiSelenium, SiTailwindcss } from 'react-icons/si';
 
 const TechSkills = () => {
   return (
@@ -25,9 +25,15 @@ const TechSkills = () => {
       </div>
       <div className="flex flex-col items-center hover-effect transition-all cursor-pointer">
         <div className="bg-green-600 rounded-full p-2">
-          <SiFastapi className="text-white text-3xl" />
+          <SiPandas className="text-white text-3xl" />
         </div>
-        <span className="text-green-600 text-sm mt-2">FastAPI</span>
+        <span className="text-green-600 text-sm mt-2">Pandas</span>
+      </div>
+      <div className="flex flex-col items-center hover-effect transition-all cursor-pointer">
+        <div className="bg-green-600 rounded-full p-2">
+          <SiSelenium className="text-white text-3xl" />
+        </div>
+        <span className="text-green-600 text-sm mt-2">Selenium</span>
       </div>
       <div className="flex flex-col items-center hover-effect transition-all cursor-pointer">
         <div className="bg-yellow-500 rounded-full p-2">
