@@ -74,8 +74,8 @@ const projectsData = [
   </div>
   `,
     photos: [ ecom1, ecom2, ecom3, ecom4, ecom5, ecom6, ecom7, ecom8, ecom9],
-    live: "https://mtecom.up.railway.app/",
-    code: "https://github.com/merab7/ecomrailway.git",
+    live: "https://jerseys.ge/",
+    code: "https://github.com/merab7/kharikha_trans",
     id: "0",
   },
   {
