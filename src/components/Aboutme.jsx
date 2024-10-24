@@ -10,11 +10,9 @@ function Aboutme() {
          Python Developer based in Tbilisi, Georgia 📍.
         </h2>
         <p className="pt-5 leading-relaxed">
-        My name is Merab Todua, and I am a Python developer. I love and enjoy this work very much. I dedicate a significant portion of my time every day to developing in this field and never stop; I am always in the process of learning because there is so much to learn, and I believe this topic is inexhaustible, and coding has a very bright future ahead.
+       My name is Merab Todua, and I am a Python developer with a passion for web development and data analysis. I enjoy working in this field and continually strive to enhance my skills to stay updated with the latest advancements in technology. One of my proudest accomplishments is building jerseys.ge, a fully functional e-commerce platform developed from scratch for a real business. This project demonstrates my ability to create dynamic, user-driven websites with a focus on functionality, scalability, and user experience.
 
-Although I didn't start coding from childhood and transitioned into this field from a different one (medicine), I am certain that the consistent effort I put into this work every day for quite some time now makes me a competitive individual with great potential for development.
-
-If you decide to work with me, I assure you that whatever I undertake, I will see it through to the end and achieve the best possible result.
+I am confident that my ongoing dedication to learning and growth will lead to continued success in this ever-evolving industry. If we work together, you can count on me to see projects through to the end while maintaining high standards. I welcome the opportunity to connect and collaborate on exciting projects!
         </p>
       </div>
     </section>
